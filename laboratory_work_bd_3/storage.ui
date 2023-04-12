@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Storage</class>
+ <widget class="QDialog" name="Storage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>732</width>
+    <height>358</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPushButton" name="Ingreds">
+       <property name="minimumSize">
+        <size>
+         <width>101</width>
+         <height>121</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Ингредиенты</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="Check">
+       <property name="minimumSize">
+        <size>
+         <width>101</width>
+         <height>131</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Проверка остатка ингредиентов</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="addIngr">
+       <property name="text">
+        <string>Добавить ингредиент</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="delIngr">
+       <property name="text">
+        <string>Удалить ингредиент</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="0" column="1">
+    <widget class="QTableView" name="tableView"/>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

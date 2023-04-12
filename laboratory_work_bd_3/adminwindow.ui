@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AdminWindow</class>
+ <widget class="QMainWindow" name="AdminWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>573</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="Menu">
+        <property name="minimumSize">
+         <size>
+          <width>101</width>
+          <height>81</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Меню</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="Storage">
+        <property name="minimumSize">
+         <size>
+          <width>101</width>
+          <height>81</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Склад</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="ordersHistory">
+        <property name="minimumSize">
+         <size>
+          <width>101</width>
+          <height>81</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>История заказов</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="sellersTable">
+        <property name="minimumSize">
+         <size>
+          <width>101</width>
+          <height>81</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Продавцы</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="0">
+     <widget class="QSplitter" name="splitter">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QTableView" name="tableView">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>411</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QTableView" name="recView">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>411</height>
+        </size>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Опции</string>
+    </property>
+    <addaction name="addDish"/>
+    <addaction name="deleteDish"/>
+    <addaction name="addSel"/>
+    <addaction name="deleteSel"/>
+    <addaction name="profit"/>
+    <addaction name="sellerSalary"/>
+    <addaction name="addRecipe"/>
+    <addaction name="delRecipe"/>
+    <addaction name="prices_and_min"/>
+    <addaction name="nazenka"/>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="addDish">
+   <property name="text">
+    <string>Добавить блюдо</string>
+   </property>
+  </action>
+  <action name="deleteDish">
+   <property name="text">
+    <string>Удалить блюдо</string>
+   </property>
+  </action>
+  <action name="addSel">
+   <property name="text">
+    <string>Добавить продавца</string>
+   </property>
+   <property name="toolTip">
+    <string>Добавить продавца</string>
+   </property>
+  </action>
+  <action name="profit">
+   <property name="text">
+    <string>Прибыль</string>
+   </property>
+  </action>
+  <action name="sellerSalary">
+   <property name="text">
+    <string>Зарплата продавца</string>
+   </property>
+   <property name="toolTip">
+    <string>Зарплата продавца</string>
+   </property>
+  </action>
+  <action name="addRecipe">
+   <property name="text">
+    <string>Добавить ингредиент в рецепт</string>
+   </property>
+   <property name="toolTip">
+    <string>Добавить Рецепт</string>
+   </property>
+  </action>
+  <action name="prices_and_min">
+   <property name="text">
+    <string>Обновить себестоимость и минимум</string>
+   </property>
+   <property name="toolTip">
+    <string>Обновить себестоимость и минимум</string>
+   </property>
+  </action>
+  <action name="deleteSel">
+   <property name="text">
+    <string>Удалить продавца</string>
+   </property>
+  </action>
+  <action name="delRecipe">
+   <property name="text">
+    <string>Удалить ингредиент из рецепта</string>
+   </property>
+  </action>
+  <action name="nazenka">
+   <property name="text">
+    <string>Установить наценку на блюдо</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
